@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Roboreach Foundation</title>
+  <meta name="description" content="Contact Roboreach Foundation for sponsorship, mentoring, and program inquiries in Doral, Florida.">
+  <meta property="og:title" content="Contact | Roboreach Foundation">
+  <meta property="og:description" content="Get in touch with Roboreach Foundation for sponsorship and program inquiries.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.roboreach.org/contact.html">
+  <meta property="og:image" content="assets/hero-placeholder.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Roboreach Foundation home"><img src="assets/logo-placeholder.svg" alt="Roboreach Foundation logo placeholder"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span aria-hidden="true"></span></button>
+      <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="sponsors.html">Sponsors</a></li>
+          <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section tight">
+      <div class="container">
+        <div class="panel">
+          <div class="eyebrow" style="background:rgba(29,78,216,.08);border-color:rgba(29,78,216,.15);color:#1e40af;">Contact Roboreach Foundation</div>
+          <h1 class="section-title">Reach out about sponsorship, program support, or mentoring.</h1>
+          <p class="section-subtitle">
+            This site is static, so the form includes two options: open your email app with a prefilled message or connect a Formspree endpoint.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <!-- Option B (Formspree): replace YOUR_FORM_ID with your Formspree endpoint to enable backendless form submission. -->
+            <h2 class="section-title" style="font-size:1.3rem;">Contact Form</h2>
+            <p class="helper">
+              Option A: click "Send via Email App" for a mailto submission. Option B: replace the Formspree endpoint above and use the submit button.
+            </p>
+            <input type="hidden" id="subject" name="subject" value="Roboreach Foundation Inquiry">
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="organization">Organization</label>
+              <input id="organization" name="organization" type="text" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="cta-row">
+              <button id="mailto-submit" class="btn btn-solid" type="button">Send via Email App</button>
+              <button class="btn btn-outline" type="submit">Submit via Formspree</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="card" aria-label="Contact information">
+          <h2 class="section-title" style="font-size:1.3rem;">Contact Info</h2>
+          <p><strong>Location:</strong> Doral, Florida</p>
+          <p><strong>Email:</strong> <a href="mailto:info@roboreach.org">info@roboreach.org</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/roboreach" target="_blank" rel="noopener noreferrer">@roboreach</a></p>
+          <p class="muted">
+            Donations are tax-deductible to the extent permitted by law, and donors receive an official acknowledgment letter for tax filing.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p><strong>Roboreach Foundation</strong></p>
+        <p class="muted">Doral, Florida • Florida-based registered 501(c)(3) nonprofit</p>
+      </div>
+      <div class="footer-links" aria-label="Contact links">
+        <a href="mailto:info@roboreach.org">info@roboreach.org</a>
+        <a href="https://instagram.com/roboreach" target="_blank" rel="noopener noreferrer">@roboreach</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
