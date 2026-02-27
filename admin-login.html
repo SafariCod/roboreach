@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Log In | Roboreach Foundation</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Roboreach Foundation home">
+        <img src="assets/logo-placeholder.svg" alt="Roboreach Foundation logo">
+      </a>
+      <div class="nav-right">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span aria-hidden="true"></span>
+        </button>
+        <a class="btn btn-primary nav-donate-btn" href="sponsors.html">Donate</a>
+      </div>
+      <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="sponsors.html">Donate &amp; Sponsor</a></li>
+          <li><a href="camp-interest.html">Camp Interest</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="admin-login.html" aria-current="page">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <form id="admin-login-form" class="contact-form" method="post">
+          <h1 class="section-title" style="font-size:1.45rem;">Admin Log In</h1>
+          <p class="helper">Enter passcode to access submission dashboard.</p>
+          <div class="field">
+            <label for="admin-passcode">Passcode</label>
+            <input id="admin-passcode" type="password" autocomplete="current-password" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Log In</button>
+          <p id="admin-login-message" class="status-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

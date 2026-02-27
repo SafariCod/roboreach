@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard | Roboreach Foundation</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Roboreach Foundation home">
+        <img src="assets/logo-placeholder.svg" alt="Roboreach Foundation logo">
+      </a>
+      <div class="nav-right">
+        <a class="btn btn-secondary" href="admin-login.html">Switch User</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section">
+      <div class="container" id="admin-dashboard">
+        <h1 class="section-title">Submission Dashboard</h1>
+        <p class="admin-note">Shows all contact and camp interest submissions with timestamps.</p>
+
+        <div class="admin-grid">
+          <section class="admin-table-wrap">
+            <div class="admin-head">
+              <h2 class="section-title" style="font-size:1.2rem; margin:0;">Contact Submissions</h2>
+              <button class="btn btn-danger" type="button" data-clear="contact">Clear Data</button>
+            </div>
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Organization</th>
+                  <th>Message</th>
+                  <th>Subject</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody id="admin-contact-body">
+                <tr><td colspan="6">Loading...</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="admin-table-wrap">
+            <div class="admin-head">
+              <h2 class="section-title" style="font-size:1.2rem; margin:0;">Camp Interest Submissions</h2>
+              <button class="btn btn-danger" type="button" data-clear="camp">Clear Data</button>
+            </div>
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Parent</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Students</th>
+                  <th>Grade Band</th>
+                  <th>Block</th>
+                  <th>Notes</th>
+                  <th>Timestamp</th>
+                </tr>
+              </thead>
+              <tbody id="admin-camp-body">
+                <tr><td colspan="8">Loading...</td></tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
