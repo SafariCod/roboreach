@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" role="img" aria-labelledby="th dh">
+  <title id="th">Robotics hero placeholder</title>
+  <desc id="dh">Abstract robotics-themed illustration with field and robot elements.</desc>
+  <rect width="960" height="620" fill="#f1f5f9"/>
+  <rect x="70" y="90" width="820" height="440" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="8"/>
+  <rect x="130" y="150" width="700" height="320" rx="16" fill="#e2e8f0"/>
+  <rect x="190" y="215" width="210" height="190" rx="14" fill="#0f172a"/>
+  <circle cx="245" cy="365" r="24" fill="#94a3b8"/>
+  <circle cx="344" cy="365" r="24" fill="#94a3b8"/>
+  <rect x="235" y="246" width="120" height="26" rx="8" fill="#1d4ed8"/>
+  <rect x="510" y="210" width="200" height="50" rx="12" fill="#334155"/>
+  <rect x="510" y="286" width="274" height="34" rx="10" fill="#64748b"/>
+  <rect x="510" y="340" width="230" height="34" rx="10" fill="#94a3b8"/>
+</svg>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camp Interest | Roboreach Foundation</title>
+  <meta name="description" content="Submit Roboreach Foundation's Summer Camp Interest Survey for the 4-week robotics camp in Doral, Florida.">
+  <meta property="og:title" content="Camp Interest | Roboreach Foundation">
+  <meta property="og:description" content="Share your preferred 4-week summer camp block and we will notify families when enrollment opens.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.roboreach.org/camp-interest.html">
+  <meta property="og:image" content="assets/program-build.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Roboreach Foundation home">
+        <img src="assets/logo-placeholder.svg" alt="Roboreach Foundation logo">
+      </a>
+      <div class="nav-right">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span aria-hidden="true"></span>
+        </button>
+        <a class="btn btn-primary nav-donate-btn" href="sponsors.html">Donate</a>
+      </div>
+      <nav id="site-nav" class="nav-links" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="sponsors.html">Donate &amp; Sponsor</a></li>
+          <li><a class="active" href="camp-interest.html" aria-current="page">Camp Interest</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn-primary" href="sponsors.html">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="panel">
+          <div class="eyebrow">Camp Interest</div>
+          <h1 class="section-title">Summer Camp Interest Survey</h1>
+          <p class="section-subtitle">
+            This is not an official registration. We will notify you when enrollment opens.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="camp-interest-form" class="contact-form" action="/api/camp-interest" method="POST">
+          <!-- Endpoint handled by Cloudflare Pages Functions -->
+          <h2 class="section-title" style="font-size:1.35rem;">Family Interest Details</h2>
+
+          <div class="field">
+            <label for="parent_name">Parent/Guardian Name</label>
+            <input id="parent_name" name="parent_name" type="text" required autocomplete="name">
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="parent_email">Email</label>
+              <input id="parent_email" name="parent_email" type="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="parent_phone">Phone (optional)</label>
+              <input id="parent_phone" name="parent_phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="student_count">Student Count</label>
+              <input id="student_count" name="student_count" type="number" min="1" max="6" value="1" required>
+            </div>
+            <div class="field">
+              <label for="grade_band">Student Grade Band</label>
+              <select id="grade_band" name="grade_band" required>
+                <option value="" selected disabled>Select one</option>
+                <option value="IQ middle">IQ middle</option>
+                <option value="V5 high">V5 high</option>
+                <option value="Mixed">Mixed</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset style="border:0; padding:0; margin:0 0 0.8rem;">
+            <legend style="font-weight:700; margin-bottom:0.5rem;">Preferred 4-Week Block</legend>
+            <div class="camp-options">
+              <div class="camp-option">
+                <input id="block-1" type="radio" name="camp_block" value="Jun 2 - Jun 27" required>
+                <label for="block-1"><strong>Jun 2 - Jun 27</strong><span class="muted">Early summer block</span></label>
+              </div>
+              <div class="camp-option">
+                <input id="block-2" type="radio" name="camp_block" value="Jun 16 - Jul 11">
+                <label for="block-2"><strong>Jun 16 - Jul 11</strong><span class="muted">Mid-summer option</span></label>
+              </div>
+              <div class="camp-option">
+                <input id="block-3" type="radio" name="camp_block" value="Jul 7 - Aug 1">
+                <label for="block-3"><strong>Jul 7 - Aug 1</strong><span class="muted">Late summer option</span></label>
+              </div>
+              <div class="camp-option">
+                <input id="block-4" type="radio" name="camp_block" value="Jul 21 - Aug 15">
+                <label for="block-4"><strong>Jul 21 - Aug 15</strong><span class="muted">Late season option</span></label>
+              </div>
+              <div class="camp-option">
+                <input id="block-5" type="radio" name="camp_block" value="Other / flexible">
+                <label for="block-5"><strong>Other / flexible</strong><span class="muted">We can discuss alternate dates</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="camp_notes">Notes</label>
+            <textarea id="camp_notes" name="camp_notes" placeholder="Share student experience level, schedule preferences, or goals."></textarea>
+          </div>
+
+          <div class="cta-row">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+          <p id="camp-confirmation" class="status-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p><strong>Roboreach Foundation</strong></p>
+        <p class="muted">Doral, Florida | Florida-based registered 501(c)(3) nonprofit</p>
+      </div>
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="sponsors.html">Donate &amp; Sponsor</a>
+        <a href="camp-interest.html">Camp Interest</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin-login.html">Log In</a>
+      </div>
+      <div class="footer-socials" aria-label="Social links">
+        <a href="mailto:info@roboreachfoundation.org">info@roboreachfoundation.org</a>
+        <a href="https://instagram.com/roboreach" target="_blank" rel="noopener noreferrer">Instagram @roboreach</a>
+        <a href="https://tiktok.com/@roboreach" target="_blank" rel="noopener noreferrer">TikTok @roboreach</a>
+        <a href="https://youtube.com/@roboreach" target="_blank" rel="noopener noreferrer">YouTube @roboreach</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

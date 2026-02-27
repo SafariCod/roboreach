@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="tp2 dp2">
+  <title id="tp2">Practice field placeholder</title>
+  <desc id="dp2">Illustration representing a robotics practice field.</desc>
+  <rect width="800" height="520" fill="#f8fafc"/>
+  <rect x="80" y="60" width="640" height="400" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="8"/>
+  <rect x="130" y="110" width="540" height="300" rx="14" fill="#e2e8f0"/>
+  <rect x="180" y="160" width="130" height="130" rx="10" fill="#0f172a"/>
+  <rect x="490" y="160" width="130" height="130" rx="10" fill="#334155"/>
+  <rect x="320" y="198" width="160" height="54" rx="10" fill="#1d4ed8"/>
+  <circle cx="245" cy="330" r="14" fill="#64748b"/>
+  <circle cx="555" cy="330" r="14" fill="#64748b"/>
+</svg>
