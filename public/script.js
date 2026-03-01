@@ -1,4 +1,29 @@
 (function () {
+  var root = document.documentElement;
+  var savedTheme = localStorage.getItem("rr_theme");
+  var currentTheme = savedTheme === "light" || savedTheme === "dark" ? savedTheme : "dark";
+  root.setAttribute("data-theme", currentTheme);
+
+  function applyTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    localStorage.setItem("rr_theme", theme);
+  }
+
+  var navRight = document.querySelector(".nav-right");
+  if (navRight) {
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "btn btn-secondary theme-toggle";
+    toggle.setAttribute("aria-label", "Toggle color theme");
+    toggle.textContent = currentTheme === "dark" ? "Light mode" : "Dark mode";
+    toggle.addEventListener("click", function () {
+      currentTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      applyTheme(currentTheme);
+      toggle.textContent = currentTheme === "dark" ? "Light mode" : "Dark mode";
+    });
+    navRight.insertBefore(toggle, navRight.firstChild);
+  }
+
   var navToggle = document.querySelector(".nav-toggle");
   var navMenu = document.getElementById("site-nav");
 
@@ -165,5 +190,16 @@
     loadAdminData().catch(function () {
       window.location.href = "admin-login.html";
     });
+  }
+
+  var givebutterRoot = document.getElementById("givebutter-embed-root");
+  if (givebutterRoot) {
+    window.setTimeout(function () {
+      var loaded = givebutterRoot.querySelector("iframe, givebutter-giving-form iframe");
+      if (!loaded) {
+        var msg = document.getElementById("givebutter-fallback-msg");
+        if (msg) msg.style.display = "block";
+      }
+    }, 3500);
   }
 })();
