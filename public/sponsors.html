@@ -62,8 +62,13 @@
           <h2 class="section-title" style="font-size:1.35rem;">Donate Online</h2>
           <p class="section-subtitle">Use the secure form below to contribute without leaving this site.</p>
           <!-- Givebutter Widget: replace YOUR_WIDGET_ID with the Widget ID copied from Givebutter Dashboard -> Sharing -> Widgets -> Embed -->
-          <div class="donate-embed" id="givebutter-embed-root">
-            <givebutter-widget id="goOx2g" align="center"></givebutter-widget>
+          <div class="donate-widget-grid" id="givebutter-embed-root">
+            <div class="donate-embed donate-embed-form">
+              <givebutter-widget id="goOx2g" align="center"></givebutter-widget>
+            </div>
+            <aside class="donate-embed donate-embed-thermo" aria-label="Fundraising progress">
+              <givebutter-widget id="g63Jlp"></givebutter-widget>
+            </aside>
           </div>
           <p class="helper" id="givebutter-fallback-msg" style="display:none; margin-top:0.7rem;">
             Embedded form unavailable right now. Confirm widget setup in Givebutter Dashboard, or use the direct Givebutter link below.

@@ -719,6 +719,20 @@ p {
   background: transparent;
 }
 
+.donate-widget-grid {
+  display: grid;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.donate-embed-form {
+  min-height: 360px;
+}
+
+.donate-embed-thermo {
+  min-height: 360px;
+}
+
 .tier-grid {
   display: grid;
   gap: 1rem;
@@ -1093,6 +1107,10 @@ textarea:focus-visible {
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
     padding: 1.7rem;
+  }
+
+  .donate-widget-grid {
+    grid-template-columns: 1fr 240px;
   }
 
   .pathway {
