@@ -112,6 +112,16 @@ html[data-theme="dark"] .camp-option input:checked + label {
   background: rgba(59, 130, 246, 0.2);
 }
 
+html[data-theme="dark"] .notice {
+  background: rgba(15, 118, 110, 0.22);
+  border-left-color: #2dd4bf;
+  color: #d1fae5;
+}
+
+html[data-theme="dark"] .notice strong {
+  color: #ecfeff;
+}
+
 html[data-theme="dark"] .hero-card {
   background: #111b2f;
   border-color: #2a3b56;
@@ -703,10 +713,10 @@ p {
 
 .donate-embed {
   width: 100%;
-  min-height: 780px;
+  min-height: 360px;
   border: 0;
-  border-radius: 12px;
-  background: var(--slate-100);
+  border-radius: var(--radius-sm);
+  background: transparent;
 }
 
 .tier-grid {
@@ -765,6 +775,11 @@ p {
   border-radius: 0 var(--radius) var(--radius) 0;
   background: var(--success-bg);
   padding: 0.9rem 1rem;
+  color: var(--navy-900);
+}
+
+.notice strong {
+  color: var(--navy-950);
 }
 
 .contact-grid {

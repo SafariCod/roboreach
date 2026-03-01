@@ -194,12 +194,17 @@
 
   var givebutterRoot = document.getElementById("givebutter-embed-root");
   if (givebutterRoot) {
+    var widgetTag = givebutterRoot.querySelector("givebutter-widget");
+    if (widgetTag && widgetTag.getAttribute("id") === "YOUR_WIDGET_ID") {
+      var placeholderMsg = document.getElementById("givebutter-fallback-msg");
+      if (placeholderMsg) placeholderMsg.style.display = "block";
+    }
+
     window.setTimeout(function () {
-      var loaded = givebutterRoot.querySelector("iframe, givebutter-giving-form iframe");
-      if (!loaded) {
+      if (window.__gbFailed === true) {
         var msg = document.getElementById("givebutter-fallback-msg");
         if (msg) msg.style.display = "block";
       }
-    }, 3500);
+    }, 1200);
   }
 })();
