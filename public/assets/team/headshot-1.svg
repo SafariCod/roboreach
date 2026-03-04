@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-labelledby="t1 d1">
-  <title id="t1">Headshot placeholder 1</title>
-  <desc id="d1">Neutral profile illustration for team member.</desc>
-  <rect width="360" height="420" fill="#e2e8f0"/>
-  <circle cx="180" cy="145" r="72" fill="#94a3b8"/>
-  <path d="M72 380c8-84 56-126 108-126s100 42 108 126" fill="#64748b"/>
-  <rect x="38" y="34" width="284" height="352" rx="20" fill="none" stroke="#cbd5e1" stroke-width="10"/>
-</svg>

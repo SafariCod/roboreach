@@ -132,6 +132,12 @@ html[data-theme="dark"] .hero-media {
   border-color: rgba(255, 255, 255, 0.14);
 }
 
+html[data-theme="dark"] .photo-card img,
+html[data-theme="dark"] .headshot-card img {
+  background: #0f172a;
+  border-color: #334155;
+}
+
 html[data-theme="dark"] .bar-track {
   background: #1f2937;
 }
@@ -659,8 +665,13 @@ p {
 
 .photo-card img {
   width: 100%;
-  border-radius: 12px;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  object-position: center;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--slate-200);
+  background: #f8fafc;
+  padding: 0.3rem;
 }
 
 .photo-card p {
@@ -910,8 +921,11 @@ p {
 .headshot-card img {
   width: 100%;
   aspect-ratio: 4 / 5;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center top;
   background: var(--slate-100);
+  border-bottom: 1px solid var(--slate-200);
+  padding: 0.3rem;
 }
 
 .headshot-card .copy {
