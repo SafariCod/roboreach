@@ -638,6 +638,19 @@ p {
   padding: 0.75rem;
 }
 
+.logo-slot.real-logo {
+  border: 0;
+  background: transparent;
+  min-height: 92px;
+}
+
+.logo-slot.real-logo img {
+  max-height: 70px;
+  width: auto;
+  max-width: 90%;
+  object-fit: contain;
+}
+
 .sponsor-carousel {
   position: relative;
   border: 1px solid var(--slate-200);
