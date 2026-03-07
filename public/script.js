@@ -207,4 +207,17 @@
       }
     }, 1200);
   }
+
+  var sponsorCarousel = document.querySelector("[data-sponsor-carousel]");
+  if (sponsorCarousel) {
+    var slides = Array.prototype.slice.call(sponsorCarousel.querySelectorAll(".sponsor-slide"));
+    if (slides.length > 1) {
+      var active = 0;
+      window.setInterval(function () {
+        slides[active].classList.remove("is-active");
+        active = (active + 1) % slides.length;
+        slides[active].classList.add("is-active");
+      }, 2600);
+    }
+  }
 })();

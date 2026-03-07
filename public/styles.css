@@ -73,6 +73,7 @@ html[data-theme="dark"] .admin-table-wrap,
 html[data-theme="dark"] .funding-bar,
 html[data-theme="dark"] .path-step,
 html[data-theme="dark"] .logo-slot,
+html[data-theme="dark"] .sponsor-carousel,
 html[data-theme="dark"] .achievement-item,
 html[data-theme="dark"] .gift-row {
   background: #111827;
@@ -635,6 +636,38 @@ p {
   font-weight: 600;
   background: #fbfdff;
   padding: 0.75rem;
+}
+
+.sponsor-carousel {
+  position: relative;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  padding: 0.8rem;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-slide {
+  display: none;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sponsor-slide.is-active {
+  display: block;
+}
+
+.sponsor-slide img {
+  max-height: 72px;
+  width: auto;
+  max-width: 85%;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .page-hero {
